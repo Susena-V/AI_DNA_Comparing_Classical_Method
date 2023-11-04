@@ -8,17 +8,20 @@ It compares nitrogen bases at corresponding positions.
 The sequences are string inputs which the user must enter.
 
 Criteria for the score:
+
   match=+5
   mismatch=-4
   gap=-12
 
 The functionality of the code:
+
   It first compares cleans the sequences then checks if they are valid
   Once that is done it first compares the sequences and calculates the score
   After this one of the sequences is complemented and the comparison is run again and score is once again calculated.
   Whichever score is higher that score is shown
 
 Why compare with the complement?
+
   The reason for complementing a sequence is because DNA has a double helical structure with two parallel yet complemented sequences.
   DNA has 4 nitrogen bases Adenine, Guanine, Cytosine and Thymine. A(Adenine) is always paired with T(Thymine) via a hydrogen double bond and C(Cytosine)
   is always paired with G(Guanine) via a hydrogen triple bond.
