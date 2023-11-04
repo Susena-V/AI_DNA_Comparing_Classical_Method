@@ -7,6 +7,9 @@ As this is implemented in Classical way I have used normal python.
 It compares nitrogen bases at corresponding positions.
 
 
+Gaps can be represented using '_','-'&' '
+
+
 The sequences are string inputs which the user must enter.
 
 
