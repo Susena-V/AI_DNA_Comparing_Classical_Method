@@ -1,5 +1,4 @@
-#AI CLASSICAL SEARCH ASSIGNMENT
-
+AI CLASSICAL SEARCH ASSIGNMENT
 
 This is an assignment in AI for comparing DNA sequences and calculating the score of comparison.
 As this is implemented in Classical way I have used normal python.
