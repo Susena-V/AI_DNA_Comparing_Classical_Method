@@ -1,43 +1,42 @@
-# AI CLASSICAL SEARCH ASSIGNMENT
 
-This is an assignment in AI for comparing DNA sequences and calculating the score of comparison.
-As this is implemented in Classical way I have used normal python.
+# AI Classical Search Assignment: DNA Sequence Comparison
 
+## Project Overview
 
-It compares nitrogen bases at corresponding positions.
+This assignment focuses on comparing DNA sequences using a classical approach implemented in Python. The system compares nitrogen bases at corresponding positions and calculates a comparison score based on predefined criteria.
 
+## Tools and Language
 
-Gaps can be represented using '_','-'&' '
+- **Python**: Used for implementing the classical search algorithm for DNA sequence comparison.
 
+## Input and Criteria
 
-The sequences are string inputs which the user must enter.
+- **Sequences**: String inputs representing DNA sequences, entered by the user.
+- **Gap Representation**: Gaps can be denoted by '_', '-', or ' '.
+- **Scoring Criteria**:
+  - Match: +5
+  - Mismatch: -4
+  - Gap: -12
 
+## Functionality
 
-Criteria for the score:
+1. **Sequence Cleaning and Validation**: The input sequences are first cleaned and validated to ensure correctness.
+2. **Comparison and Scoring**: 
+   - The sequences are compared base by base, and the score is calculated.
+   - The comparison is then repeated with one of the sequences complemented, and a new score is calculated.
+   - The higher of the two scores is selected and displayed.
 
-  match=+5
-  
-  mismatch=-4
-  
-  gap=-12
+## Why Compare with the Complement?
 
-The functionality of the code:
+DNA's double-helical structure consists of two parallel but complementary strands. DNA is composed of four nitrogen bases: Adenine (A), Guanine (G), Cytosine (C), and Thymine (T). A is always paired with T via a hydrogen double bond, and C is paired with G via a hydrogen triple bond.
 
-  It first compares cleans the sequences then checks if they are valid
-  Once that is done it first compares the sequences and calculates the score
-  After this one of the sequences is complemented and the comparison is run again and score is once again calculated.
-  Whichever score is higher that score is shown
-  
+When comparing DNA sequences from two different individuals, you are essentially comparing one strand from each. For example:
 
-Why compare with the complement?
+- Sequence from Person A: `AGTCAGTC`
+- Sequence from Person B: `TCAGTCAG`
 
-  The reason for complementing a sequence is because DNA has a double helical structure with two parallel yet complemented sequences.
-  DNA has 4 nitrogen bases Adenine, Guanine, Cytosine and Thymine. A(Adenine) is always paired with T(Thymine) via a hydrogen double bond and C(Cytosine)
-  is always paired with G(Guanine) via a hydrogen triple bond.
-  
-  So when we compare the DNA from two different people we are taking one strand from each and compare.
-  
-  Lets say sequence from person A is AGTCAGTC and sequence from person B is TCAGTCAG.
-  
-  Now, when comparing both sequences we initially think they are different. Let us complement DNA of person A. 
-  The complemented sequence is TCAGTCAG which is the same as the DNA of person B!
+At first glance, these sequences appear different. However, when you complement Person A's sequence, it becomes `TCAGTCAG`, which matches Person B's sequence. This demonstrates the importance of comparing both the original and complemented sequences.
+
+## Conclusion
+
+This project showcases a classical AI approach to DNA sequence comparison, leveraging the biological nature of DNA to ensure accurate and meaningful results. The implementation demonstrates how computational techniques can be applied to biological problems, offering insights into genetic similarities.
